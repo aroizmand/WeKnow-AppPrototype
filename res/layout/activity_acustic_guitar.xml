@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context=".AcusticGuitar">
+
+    <ImageButton
+        android:id="@+id/profile3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:onClick="onClickProfile"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile_empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageButton
+        android:id="@+id/menu2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:background="@color/transparent"
+        android:onClick="onClickMenu"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/drawer_view"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acoustic Guitars"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2C2C2C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="344dp"
+        android:layout_height="585dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Since performers often use acoustic guitars in large venues, acoustic guitar makers produce models that have built-in microphones, or pickups. The advantage is that these guitars function and sound exactly like an acoustic guitar, but when needed, they can be plugged in and amplified through an amp or house sound system. Most acoustic-electric guitars have some level of tone control in the form of an on-board equalizer. The drawback is that because these guitars have electronic hardware not found in acoustic guitars, you can expect to pay more. But the cost may be comparable to an electric guitar, so depending on the style of music you want to play, an acoustic-electric may be an option. "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="83dp"
+        android:layout_height="58dp"
+        android:onClick="onBackButton"
+        android:background="@drawable/hobbies_buttons"
+        android:backgroundTint="#5FE8CD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

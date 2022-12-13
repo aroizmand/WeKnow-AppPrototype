@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="83dp"
+        android:layout_height="58dp"
+        android:background="@drawable/hobbies_buttons"
+        android:backgroundTint="#5FE8CD"
+        android:onClick="onBackButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/photograpy"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/hobbies_buttons"
+        android:text="Photos"
+        android:textAlignment="center"
+        android:onClick="selectedPhot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/writing"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:background="@drawable/hobbies_buttons"
+        android:text="Writing"
+        android:textAlignment="center"
+        android:onClick="selectedWrit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/acting"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/hobbies_buttons"
+        android:text="Acting"
+        android:textAlignment="center"
+        android:onClick="selectedAct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/film"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:background="@drawable/hobbies_buttons"
+        android:text="Film"
+        android:textAlignment="center"
+        android:onClick="selectedFilm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photograpy"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="350dp"
+        android:layout_height="34dp"
+        android:background="@drawable/roundsearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guitarIcon"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <ImageView
+        android:id="@+id/guitarIcon"
+        android:layout_width="61dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/camera" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="60dp"
+
+        android:backgroundTint="#A9EDA2"
+        android:onClick="onClickSave"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acting"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="107dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#FCF48A9A"
+        android:onClick="onClickReset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="112dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/transparent"
+        android:scaleType="fitCenter"
+        android:onClick="onClickMenu"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toStartOf="@+id/guitarIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/drawer_view" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="106dp"
+        android:layout_height="72dp"
+        android:backgroundTint="@color/transparent"
+        android:scaleType="fitCenter"
+        android:onClick="onClickProfile"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/guitarIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592"
+        app:srcCompat="@drawable/profile_empty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
